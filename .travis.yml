@@ -1,0 +1,10 @@
+language: java
+before_install:
+- chmod +x mvnw
+deploy:
+  provider: heroku
+  api_key:
+    secure: o/b57xlQzB8Jf8UzOUfHeQlCFUJaa3T/3OgCDC557ny45jzPjblNQCSnWoPY9W8emQWYNv+kzwihzf/OveH4dSijlvmJbPSUHgTitsNHG4k8QiCTYjRdj4loeoxwCuCGZPNjvndBVeD8kmA808A6ObaoSLKN/D/7MNs1oHLsA+zZyN00Ni79FAh48+TWUPlBpSe6bBMJmvRWWVl63qv9urv/lSvgjzh9tsQL1UOV69d1k2kExD+tuDUPvsUG9Jk3oweh3d+SqSB0sLWYTtBpti4b7Lu0uBiO+OOvsWkJMN1ocQLWUOYM5UkyK18/7ZoTt7eMu7Vn5X/kvL0lkXJLVe86D0UPHdDOpM+eOaCvJnVWWkWgPdIvjgVRz4dJbC9NPBIzR2moBS8SF/Ll5D2uBHkS6KogwjXltWNlI2oHL3sONn24ulAIOMEs/1c1kvlCx16Jgn0+e3bjPtI0esxPmDe2hsLN4Uji1UL8tGZvNtHYCG+Q5KnJrePjknn3GOqekv3kVomrF7m4pjSVx6tbjBv4Q6oPFcmrZE8g9K+/ac2kizddHIxlGvbRNJXCJ6wpnQyUXBgl29vz7a2b8ttxFcRADQ44wKcz8pG4+Ostgyv0IBDEi+UpNp1ZPWZg16UV1ieKwHYnrWpCxn76GrQzS3ylfEijnXPa68/kIY+UX0o=
+  app: kata-python-flask-xp
+  on:
+    repo: manikandanmuthuvs/kata-python-flask-xp
