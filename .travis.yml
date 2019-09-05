@@ -1,3 +1,6 @@
+sudo: required
+services:
+  - docker
 language: python
 python:
   - "3.7"
@@ -5,7 +8,9 @@ install:
   - pip install -r requirements.txt
 script: 
   - python -m pytest -v 
-  - flake
+  - flake8
+after_success:
+  - sh .travis/deploy_dockerhub.sh
 deploy:
   provider: heroku
   api_key:
