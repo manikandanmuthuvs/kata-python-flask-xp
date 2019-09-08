@@ -1,5 +1,4 @@
-# docker login --username $DOCKER_USER --password $DOCKER_PASS
-docker login -u "manikandanmuthuv" -p "N@ukr!123" docker.io
+docker login --username $DOCKER_USER --password $DOCKER_PASS
 if [ "$TRAVIS_BRANCH" = "master" ]; then
 TAG="latest"
 else
