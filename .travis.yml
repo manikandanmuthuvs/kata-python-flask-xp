@@ -17,5 +17,3 @@ after_success:
 #   app: kata-python-flask-xp
 #   on:
 #     repo: manikandanmuthuvs/kata-python-flask-xp
-
-#
